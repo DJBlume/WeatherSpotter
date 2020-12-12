@@ -28,7 +28,7 @@ class App extends React.Component {
 
   getData() {
     //API call for Forecast
-    Axios.get(`http://api.weatherapi.com/v1/forecast.json?key=8e24985cac8e4eea925204724200912&q=${this.state.location.latitude},${this.state.location.longitude}&days=3`).then(res => {
+    Axios.get(`https://api.weatherapi.com/v1/forecast.json?key=${api_key}&q=${this.state.location.latitude},${this.state.location.longitude}&days=3`).then(res => {
 
       //location data
       var loc = res.data.location;
@@ -144,7 +144,7 @@ class App extends React.Component {
     //If the input is empty, do not make the api call
     if (this.state.inputData.length >= 1) {
       //API Call
-      Axios.get(`http://api.weatherapi.com/v1/forecast.json?key=8e24985cac8e4eea925204724200912&q=${this.state.inputData}&days=3`).then(res => {
+      Axios.get(`https://api.weatherapi.com/v1/forecast.json?key=${api_key}&q=${this.state.inputData}&days=3`).then(res => {
 
         //location data
         var loc = res.data.location;
