@@ -1,0 +1,103 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 5%;
+    background: #FFF;
+}
+
+.location{
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.location_input{
+    border: none;
+    border-bottom: 1px solid #000;
+    width: 250px;
+    margin-left: 5px;
+    font-size: 25px;
+}
+
+.submit{
+    height: 50px;
+    width: 50px;
+    background: transparent url(../assets/search_icon.svg) center center no-repeat;
+    content: "";
+    border: none;
+    cursor: pointer;
+    color: transparent;
+    position: relative;
+    right: 42px;
+    left: auto;
+    top: -5px;
+    bottom: auto;
+}
+
+.toggleContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.toggleUnits{
+    height: 50px;
+    width: 150px;
+    border-radius: 57px;
+    border: none;
+    background: #0E7242;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    margin-bottom:30px;
+}
+
+.toggleUnits::before{
+    box-shadow: 0 6px rgb(158, 179, 151);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 57px;
+    content: "";
+    top:0;
+    left: 0;
+}
+
+.toggleUnits:active{
+    transform: translateY(3px);
+    box-shadow: none !important;
+}
+
+.toggleUnits:active::before{
+    box-shadow: 0 2px 1px rgb(119, 119, 119) !important;
+}
+
+.toggleUnits:hover{
+    background: #006BA7;
+    box-shadow: 0 0 10px 0px #006BA7;
+}
+
+.toggleUnits:hover::before{
+    box-shadow: 0 6px rgb(145, 155, 182);
+}
+
+@media screen and (min-width: 48em){
+
+}
+
+@media screen and (min-width: 62em){
+    .header{
+        flex-direction: row;
+    }
+
+    .location {
+        margin-bottom: 0;
+    }
+
+    .toggleUnits{
+        margin-bottom: 0;
+    }
+}

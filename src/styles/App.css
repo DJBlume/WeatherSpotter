@@ -1,0 +1,13 @@
+body{
+  background: linear-gradient(90deg,#3f2149 0%,#1c1020 100%);
+}
+
+.App {
+  text-align: center;
+}
+
+.componentTitle{
+  color: #FFF;
+  font-size: 35px;
+  margin-top: 40px
+}
