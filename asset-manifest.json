@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/weatherspotter/static/css/main.05ef77c7.chunk.css",
-    "main.js": "/weatherspotter/static/js/main.77fe12db.chunk.js",
-    "main.js.map": "/weatherspotter/static/js/main.77fe12db.chunk.js.map",
+    "main.js": "/weatherspotter/static/js/main.586ba620.chunk.js",
+    "main.js.map": "/weatherspotter/static/js/main.586ba620.chunk.js.map",
     "runtime-main.js": "/weatherspotter/static/js/runtime-main.1724bfd8.js",
     "runtime-main.js.map": "/weatherspotter/static/js/runtime-main.1724bfd8.js.map",
     "static/js/2.2a039224.chunk.js": "/weatherspotter/static/js/2.2a039224.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.1724bfd8.js",
     "static/js/2.2a039224.chunk.js",
     "static/css/main.05ef77c7.chunk.css",
-    "static/js/main.77fe12db.chunk.js"
+    "static/js/main.586ba620.chunk.js"
   ]
 }
