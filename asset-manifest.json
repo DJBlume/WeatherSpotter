@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/WeatherSpotter/static/css/main.20f52ee6.chunk.css",
-    "main.js": "/WeatherSpotter/static/js/main.586ba620.chunk.js",
-    "main.js.map": "/WeatherSpotter/static/js/main.586ba620.chunk.js.map",
+    "main.js": "/WeatherSpotter/static/js/main.f0227015.chunk.js",
+    "main.js.map": "/WeatherSpotter/static/js/main.f0227015.chunk.js.map",
     "runtime-main.js": "/WeatherSpotter/static/js/runtime-main.8ed3ecdd.js",
     "runtime-main.js.map": "/WeatherSpotter/static/js/runtime-main.8ed3ecdd.js.map",
     "static/js/2.2a039224.chunk.js": "/WeatherSpotter/static/js/2.2a039224.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.8ed3ecdd.js",
     "static/js/2.2a039224.chunk.js",
     "static/css/main.20f52ee6.chunk.css",
-    "static/js/main.586ba620.chunk.js"
+    "static/js/main.f0227015.chunk.js"
   ]
 }
