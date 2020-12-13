@@ -4,6 +4,7 @@ import Moment from 'moment';
 
 export default class Forecast extends Component {
 
+    //add hidden class to elements on smaller screensizes
     expand() {
         if (window.innerWidth < 992) {
             var elems = document.getElementsByClassName('forecastday');
@@ -27,6 +28,7 @@ export default class Forecast extends Component {
         });
     }
 
+    //toggle hidden elements for each individual forecast day
     expandFirst = () => {
         document.getElementById("first").classList.toggle("hidden");
     }
