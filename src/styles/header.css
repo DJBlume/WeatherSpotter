@@ -7,6 +7,12 @@
     background: #FFF;
 }
 
+.title{
+    background: -webkit-linear-gradient(360deg, #F1864A 25%, #BF3825 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .location{
     margin-bottom: 30px;
     font-size: 20px;
