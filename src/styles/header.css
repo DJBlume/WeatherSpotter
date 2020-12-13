@@ -11,6 +11,10 @@
     margin-bottom: 30px;
     font-size: 20px;
     max-width: 375px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .location_input{
@@ -33,7 +37,7 @@
     position: relative;
     right: 42px;
     left: auto;
-    top: -8px;
+    top: 0px;
     bottom: auto;
 }
 
