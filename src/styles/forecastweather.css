@@ -74,6 +74,10 @@
     display: inline-block;
 }
 
+.snow p {
+    margin-right: 0 !important;
+}
+
 .hidden .precip, .hidden .wind, .hidden .expected {
     display: none;
 }
