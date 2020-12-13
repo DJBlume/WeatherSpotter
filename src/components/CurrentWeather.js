@@ -14,37 +14,39 @@ export default class CurrentWeather extends Component {
                 <div className="selectedLocation">
                     <h2>{city}, {state}</h2>
                 </div>
-                <div className="temp">
-                    <h2>{imperial && Math.round(tempF)}{!imperial && Math.round(tempC)}&deg;{imperial && "F"}{!imperial && "C"}</h2>
-                    <div className="realfeel">
-                        Feels like: {imperial && Math.round(feelF)}{!imperial && Math.round(feelC)}&deg;
+                <div className="top">
+                    <div className="temp">
+                        <h2>{imperial && Math.round(tempF)}{!imperial && Math.round(tempC)}&deg;{imperial && "F"}{!imperial && "C"}</h2>
+                        <div className="realfeel">
+                            Feels like: {imperial && Math.round(feelF)}{!imperial && Math.round(feelC)}&deg;
                     </div>
-                </div>
-                <div className="desc_container">
-                    <div className="iconFrame">
-                        <img src={icon} alt="weather icon"></img>
                     </div>
-                    <div className="description">
-                        {desc}
+                    <div className="desc_container">
+                        <div className="iconFrame">
+                            <img src={icon} alt="weather icon"></img>
+                        </div>
+                        <div className="description">
+                            {desc}
+                        </div>
                     </div>
                 </div>
                 <div className="current_group">
-                    <div className="precip">
-                        Precipitation:
-                        <div className="total">
-                            {imperial && precipI + " in"}{!imperial && precipM + " mm"}
-                        </div>
-                    </div>
                     <div className="windSpd">
-                        Wind Speed:
+                        <span>Wind Speed:</span>
                         <div>
                             {imperial && windSpdM + " mph"}{!imperial && windSpdK + " kph"}
                         </div>
                     </div>
                     <div className="windDir">
-                        Wind Direction:
+                        <span>Wind Direction:</span>
                         <div>
                             {windDir}
+                        </div>
+                    </div>
+                    <div className="precip">
+                        <span>Precipitation:</span>
+                        <div className="total">
+                            {imperial && precipI + " in"}{!imperial && precipM + " mm"}
                         </div>
                     </div>
                 </div>

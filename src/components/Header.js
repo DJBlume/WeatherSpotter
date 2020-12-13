@@ -5,11 +5,10 @@ export default function Header(props) {
 
     return (
         <div className="header">
-            <h1 className="title">WeatherSpotter</h1>
+            <h1 className="title"><span>Weather</span>Spotter</h1>
             <form className="location" onSubmit={(e) => { props.updateWeather(e) }}>
-                <label htmlFor="location">Search Location: </label>
-                <input className="location_input" name="location" placeholder="City/Zip" onChange={(e) => props.changeLocation(e.target.value)}></input>
-                <button className="submit" type="submit" value="search"></button>
+                <input className="location_input" name="location" placeholder="Enter City/Zip Code" onChange={(e) => props.changeLocation(e.target.value)}></input>
+                <button className="submit" type="submit" value="search">Search</button>
             </form>
             <div className="toggleContainer">
                 <button className="toggleUnits" onClick={(e) => props.handleClick(e)}>Imperial/Metric</button>

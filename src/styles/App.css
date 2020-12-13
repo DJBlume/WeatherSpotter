@@ -1,13 +1,20 @@
 body{
-  background: linear-gradient(90deg,#3f2149 0%,#1c1020 100%);
+  background: #FFF;
+  box-sizing: border-box;
 }
 
 .App {
   text-align: center;
 }
 
+.current{
+  background: linear-gradient(90deg,#3f2149 0%,#1c1020 100%);
+  padding: 40px 0 15px;
+}
+
 .componentTitle{
-  color: #FFF;
-  font-size: 35px;
-  margin-top: 40px
+  color: #000;
+  font-size: 25px;
+  text-align: left;
+  margin: 20px 0 10px 10%;
 }

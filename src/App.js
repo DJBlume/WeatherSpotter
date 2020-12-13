@@ -230,10 +230,13 @@ class App extends React.Component {
     return (
       <div className="App">
         <Header changeLocation={this.handleChange} updateWeather={this.updateWeather} handleClick={this.handleClick} imperial={this.state.imperial} />
-        <h2 className="componentTitle">Current Conditions</h2>
-        <CurrentWeather locationData={this.state.locationData} currentWeather={this.state.currentWeather} imperial={this.state.imperial} />
-        <h2 className="componentTitle">3-Day Forecast</h2>
-        {this.state.displayForecast && <Forecast forecast={this.state.forecast} imperial={this.state.imperial} />}
+        <div className="current">
+          <CurrentWeather locationData={this.state.locationData} currentWeather={this.state.currentWeather} imperial={this.state.imperial} />
+        </div>
+        <div className="forecast">
+          <h2 className="componentTitle">3-Day Forecast</h2>
+          {this.state.displayForecast && <Forecast forecast={this.state.forecast} imperial={this.state.imperial} />}
+        </div>
       </div>
     );
   }

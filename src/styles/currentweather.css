@@ -1,39 +1,52 @@
 .currentWeather {
-    background: linear-gradient(101.93deg, #00C2C2 0%, #006BA7 100%);
-    border: 2px solid #FFF;
-    margin: 50px auto 0;
+    margin: 0 auto;
     max-width: 75%;
-    border-radius: 20px;
+    text-align: left;
 }
 
 .selectedLocation h2 {
     color: #FFF;
     font-size: 25px;
+    margin-top: 0;
+}
+
+.top{
+    display: flex;
 }
 
 .temp h2{
     color: #FFF;
-    font-size: 50px;
+    font-size: 55px;
     font-weight: bold;
     text-shadow: 2px 2px 5px #000000;
     margin-bottom: 5px;
+    margin-top: 0;
 }
 
 .temp{
     color: #FFF;
+    display:inline-block;
+    margin-right:100px;
+}
+
+.currentWeather .description{
+    margin-top: -12px;
 }
 
 .desc_container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    display: inline-block;
     color: #FFF;
-    height: 100px;
-    max-height: 100px;
     font-size: 25px;
     font-weight: bold;
     margin-bottom: 20px;
+    position: relative;
+    top: -18px;
+    opacity: 0.5;
+    text-align: center;
+}
+
+.realfeel, .windSpd span, .windDir span, .precip span, .selectedLocation{
+    opacity: 0.5;
 }
 
 .iconFrame {
@@ -46,17 +59,17 @@
 
 .current_group{
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
-    margin:0 auto 50px;
+    margin:0;
     color: #FFF;
     font-size: 20px;
-    max-width: 75%;
+    max-width: 100%;
 }
 
-.current_group div{
-    margin:10px
+.current_group .windSpd{
+    margin-right: 60px;
 }
 
 .current_group div div {
@@ -64,8 +77,31 @@
     font-weight: bold;
 }
 
+.current_group .precip{
+    width: 100%;
+}
+
 @media screen and (min-width: 48em) {
     .selectedLocation h2 {
         font-size: 35px;
+        text-align: center;
+    }
+
+    .top{
+        justify-content: center;
+    }
+
+    .current_group{
+        justify-content: space-around;
+        max-width: 75%;
+        margin: 0 auto;
+    }
+
+    .current_group .precip{
+        width: auto;
+    }
+
+    .current_group .windDir, .current_group .windSpd{
+        margin-right: 0;
     }
 }
