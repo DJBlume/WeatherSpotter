@@ -12,7 +12,7 @@
     border: 2px solid #FFF;
     border-radius: 20px;
     margin: 20px 10px; 
-    width: 390px;
+    width: 390px !important;
     color: #FFF;
     padding-bottom: 40px;
 }

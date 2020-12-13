@@ -1,10 +1,9 @@
 .header{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin: 0 auto;
-    padding: 0 5%;
     background: #FFF;
 }
 
@@ -28,12 +27,13 @@
     background: transparent url(../assets/search_icon.svg) center center no-repeat;
     content: "";
     border: none;
+    border-radius: 50%;
     cursor: pointer;
     color: transparent;
     position: relative;
     right: 42px;
     left: auto;
-    top: -5px;
+    top: -8px;
     bottom: auto;
 }
 
